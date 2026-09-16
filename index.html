@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/tr/">
-    <title>Yönlendiriliyor... | Dijital Öğretmen</title>
+    <title>Digital Teacher</title>
+    <script>
+        // Tarayıcı dilini kontrol et
+        var lang = navigator.language || navigator.userLanguage;
+        // Eğer dil Türkçe ise /tr/ klasörüne, değilse /en/ klasörüne yönlendir
+        if (lang.indexOf('tr') > -1) {
+            window.location.replace("/tr/");
+        } else {
+            window.location.replace("/en/");
+        }
+    </script>
 </head>
 <body>
-    <p>Gizlilik politikasına yönlendiriliyorsunuz. Yönlendirme gerçekleşmezse <a href="/tr/">buraya tıklayın</a>.</p>
 </body>
 </html>
